@@ -25,59 +25,73 @@
 
 .categoryBadge {
   display: inline-block;
-  padding: 2px 10px;
+  padding: 3px 12px;
+  font-family: var(--font-geist-mono), monospace;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-on-accent);
   background: var(--color-accent-main);
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .readingTime {
   display: inline-block;
-  padding: 2px 10px;
+  padding: 3px 10px;
+  font-family: var(--font-geist-mono), monospace;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.04em;
-  color: var(--ink-secondary);
+  color: var(--ink-tertiary);
   background: var(--surface-subtle);
   border: 1px solid var(--border-element);
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: -0.03em;
-  line-height: 1.2;
+  line-height: 1.15;
   color: var(--ink-primary);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  max-width: 680px;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 2.25rem;
+  }
 }
 
 .date {
   display: block;
-  font-size: 13px;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 12px;
+  letter-spacing: 0.03em;
   color: var(--ink-tertiary);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .tags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  margin-bottom: 16px;
 }
 
 .tag {
   display: inline-block;
   padding: 2px 8px;
+  font-family: var(--font-geist-mono), monospace;
   font-size: 11px;
   font-weight: 500;
+  letter-spacing: 0.03em;
   color: var(--ink-secondary);
-  background: var(--surface-subtle);
   border: 1px solid var(--border-element);
-  border-radius: 3px;
+  border-radius: 0;
+  background: transparent;
 }
 
 /* ── Two-Column Body ──────────────────────────────────────── */

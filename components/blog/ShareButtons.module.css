@@ -1,21 +1,23 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
   align-items: center;
 }
 
 .pill {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 6px 14px;
+  gap: 5px;
+  padding: 5px 12px;
   border: 1px solid var(--border-element);
   border-radius: 999px;
-  background: var(--surface-card);
-  color: var(--ink-secondary);
-  font-size: 13px;
+  background: transparent;
+  color: var(--ink-tertiary);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 11px;
   font-weight: 500;
+  letter-spacing: 0.03em;
   cursor: pointer;
   transition: all 0.15s ease;
   white-space: nowrap;
@@ -30,6 +32,8 @@
 
 .pill svg {
   flex-shrink: 0;
+  width: 14px;
+  height: 14px;
 }
 
 .copied {
